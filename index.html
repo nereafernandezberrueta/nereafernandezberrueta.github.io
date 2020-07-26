@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <!-- saved from url=(0064)https://www.w3schools.com/w3css/tryw3css_templates_architect.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>W3.CSS Template</title>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Nerea Fernández Berrueta</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./W3.CSS Template_files/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
-    function pageRedirect() {
-      window.location.href = "cv.html";
+    function go2cv() {
+      window.location.href = "cv_nerea.html";
     }      
 </script> 
+<script type="text/javascript">
+function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+  if (x == "") {
+    alert("Rellene el campo nombre");
+    return false;
+  }
+  if(document.forms["myForm"]["mail"].value=="")
+  {  
+    alert("Rellene el campo email");
+	return false;
+  }
+    if(document.forms["myForm"]["subject"].value=="")
+  {  
+    alert("Rellene el campo concepto");
+	return false;
+  }
+    if(document.forms["myForm"]["comment"].value=="")
+  {  
+    alert("Rellene el campo comentario");
+	return false;
+  }
+}
+</script>
+
 </head><body>
 
 <!-- Navbar (sit on top) -->
@@ -56,7 +84,7 @@
 		Me considero una persona activa, con capacidad de trabajo en equipo y motivada por las nuevas tecnologías.<br>
 		Desde Enero de 2017 trabajo en Ceit como investigadora en el campo de trenes, más especificamente en las comunicaciones ferroviarias. En Diciembre de 2018, empecé con el doctorado en este mismo campo de investigación.
 		</p>
-		<button class="w3-button w3-light-grey center" onclick="location.href='cv_nerea.html'">Más información sobre mí</button>
+		<button class="w3-button w3-light-grey center" onclick="go2cv()">Más información sobre mí</button>
   </div>
   
   <!-- Project Section -->
@@ -67,8 +95,10 @@
 	<p>Shift2Rail es la primera iniciativa ferroviaria europea en buscar investigación centrada e innovación y soluciones impulsadas por el mercado al acelerar la integración de tecnologías nuevas y avanzadas en soluciones innovadoras de productos ferroviarios.</p>
   <br><br><br>
   <a href="https://projects.shift2rail.org/s2r_ip2_n.aspx?p=X2RAIL-1"><img class="w3-image w3-padding-large" src="images/x2rail1.jpeg" alt="x2rail1" width="200" height="300"></a><span class="w3-tag w3-indigo w3-round">Completado</span>	
+  <p>El proyecto X2Rail-1 tiene como objetivo investigar y desarrollar seis tecnologías clave seleccionadas para fomentar las innovaciones en el campo de la señalización ferroviaria y los sistemas de automatización hacia un sistema flexible, en tiempo real, inteligente de gestión del tráfico y soporte de decisiones.</p>
   <br>
-  <a href="https://projects.shift2rail.org/s2r_ip2_n.aspx?p=X2RAIL-3"><img class="w3-image w3-padding-large" src="images/x2rail3.png" alt="x2rail3" width="200" height="300"></a><span class="w3-tag w3-indigo w3-round">En curso</span>		
+  <a href="https://projects.shift2rail.org/s2r_ip2_n.aspx?p=X2RAIL-3"><img class="w3-image w3-padding-large" src="images/x2rail3.png" alt="x2rail3" width="200" height="300"></a><span class="w3-tag w3-indigo w3-round">En curso</span>
+<p>El proyecto tiene como objetivo continuar la investigación y el desarrollo de tecnologías clave para fomentar las innovaciones en el campo de la señalización ferroviaria, las telecomunicaciones, las metodologías de prueba y la seguridad cibernética, como parte de una estrategia Shift2Rail IP2 a largo plazo hacia un control de tráfico inteligente, flexible y en tiempo real. sistema de gestión y soporte de decisiones. X2Rail-3 también explorará el acoplamiento virtual, un concepto innovador capaz de operar trenes mucho más cerca uno del otro (dentro de su distancia de frenado absoluta o relativa) y modificar dinámicamente su propia composición en movimiento.</p>  
   <div class="w3-light-grey w3-round-xlarge w3-small">
   <div  class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">80%</div>
   </div>
@@ -91,38 +121,39 @@
     </div>
    
   
-  <div class="w3-row-padding w3-grayscale text-center" id="articulos" align="center">
+  <div class="w3-row-padding w3-grayscale" id="articulos" align="center" style="padding: 80px 140px">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" align="center">ARTÍCULOS PUBLICADOS</h3>
-  
-   <dd>
+
+   
                 <p><b><a href="https://ieeexplore.ieee.org/document/9115631">An Overview of Current IP Network Emulators for the Validation of Railways Wireless Communications</a></b><span><i>  IEEE Access</i></span></p>
                 <p><b><a href="https://ieeexplore.ieee.org/document/8868192">Map-Aided Software Enhancement for Autonomous GNSS Complementary Positioning System for Railway</a></b><span><i>  IEEE Transactions on Vehicular Technology</i></span></p>
 				<p><b>Survey of environmental effects in railway communications </b><span><i>Nets4 2018</i></span></p>	
+				
                
-            </dd>
+            
 			 <a href="https://orcid.org/0000-0002-7639-3643"><img  src="./W3.CSS Template_files/ORCID.png" style="width:5%" align="center">  </a>
   </div>
  
 
 <!-- Connected Section -->
-  <div class="w3-row-padding w3-grayscale" id="conectados" style="padding: 50px 50px">
+  <div class="w3-row-padding w3-grayscale" style="padding: 80px 140px" id="conectados">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" align="center">CONECTADOS</h3>  
  
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-col l4 s4 w3-margin-bottom">
       <img src="./W3.CSS Template_files/etxez.png" alt="Josu" style="width:73%">
       <h3>Josu Etxezarreta</h3>
       <p class="w3-opacity">Ingeniero de Telecomunicaciones</p>
       <p>Quantum Error Correction</p>
       <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='cv.html'">Perfil de Josu</button></p>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-col l4 s4 w3-margin-bottom">
       <img src="./W3.CSS Template_files/Aitor.jpg" alt="Aitor" style="width:62.5%">
       <h3>Aitor Erenchun</h3>
       <p class="w3-opacity">Ingeniero Mecánico</p>
       <p>Control Activo de Vibraciones</p>
       <p><button class="w3-button w3-light-grey w3-block">Perfil de Aitor</button></p>
     </div>
-	<div class="w3-col l3 m6 w3-margin-bottom">
+	<div class="w3-col l4 s4 w3-margin-bottom">
       <img src="./W3.CSS Template_files/NagoreIturbe.jpeg" alt="Nagore" style="width:59%">
       <h3>Nagore Iturbe</h3>
       <p class="w3-opacity">Ingeniera de Telecomunicaciones</p>
@@ -142,11 +173,11 @@
 	
 		<div class="w3-col l5 m5 s5"><br>
 		<p>No dudes en ponerte en contacto conmigo para cualquier inquietud.</p><br>
-			<form action="mailto:nfernandez@ceit.es" method="post" enctype="text/plain" target="_blank" onsubmit="location.href='thanks.html' " ;>   
-				<input class="w3-input w3-section w3-border" type="text" placeholder="Name" required name="Name">
-				<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-				<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-				<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+			<form name="myForm" action="mailto:nfernandez@ceit.es" method="post" enctype="text/plain" target="_blank" onsubmit="return validateForm()">   <!---->
+				<input class="w3-input w3-section w3-border" type="text" name="name" placeholder="Nombre" ><!--required name="Name"-->
+				<input class="w3-input w3-section w3-border" type="text" name="mail" placeholder="Email"> <!--required name="Email"-->
+				<input class="w3-input w3-section w3-border" type="text" name="subject" placeholder="Concepto" >
+				<input class="w3-input w3-section w3-border" type="text" name="comment" placeholder="Comentario" >
 				<button class="w3-button w3-black w3-section" type="submit">
 					<i class="fa fa-paper-plane"></i> Enviar mensaje
 				</button>	  
@@ -157,10 +188,11 @@
 			<img src="./W3.CSS Template_files/Phone.jpg" class="w3-image" style="width:40%" > </img>
 			<br>
 			<br>
-			<p><b>Contáctame desde cualquier lugar</b></p>
+			<p align="text-center"><b>Contáctame desde cualquier lugar</b></p>
 		</div>
 	</div>
   </div>
+ 
  
  
 <!-- Image of location/map -->
@@ -173,10 +205,11 @@
 <!--revisar esto de los iconos que no se porque no funcaiona-->
   <div class="w3-container w3-padding-16" id="InformacionPersonal">
     <h3 class="w3-border-bottom w3-border-light-grey ">INFORMACIÓN PERSONAL</h3>
-	<div class="row test w3-padding-16">
-		<i class="fa fa-map-marker w3-hover-opacity"></i><span class="tel">Donosti, Spain</span><br />
-        <i class="fa fa-phone w3-hover-opacity"></i><span class="tel">943 21 28 00 Ext 2978</span><br />
-        <i class="fa fa-envelope w3-hover-opacity"></i><p><a class="email" href="mailto:nfernandez@ceit.es">nfernandez@ceit.es</a></p>
+	<!--<div class="row test w3-padding-16">-->
+	<div class="w3-container">
+		<i class="fa fa-map-marker w3-hover-opacity"></i><span class="tel"> Donosti, Spain</span><br>
+        <i class="fa fa-phone w3-hover-opacity"></i><span class="tel"> 943 21 28 00 Ext 2978</span><br>
+        <i class="fa fa-envelope w3-hover-opacity"></i><a class="email" href="mailto:nfernandez@ceit.es"> nfernandez@ceit.es</a><br>
     </div>
 </div>
 
